@@ -32,7 +32,7 @@ h1 {
 .toMiddle{
 margin: auto;
 }
-/*padding top & bottom*/
+/*paddings top & bottom*/
 .smPadding{
   padding-bottom: 10px;
   padding-top: 10px;
@@ -48,6 +48,15 @@ margin: auto;
   margin-left: auto;
   margin-top: auto;
 }
+
+/*item fills the space*/
+.fillHorizontal{
+  width: 100%;
+}
+.fillVertical{
+  height: 100%;
+}
+
 /*palette: http://www.colourlovers.com/palette/475875/Gentle_Waves?widths=0*/
 .palette-1{
   background-color:#D3E2BB;

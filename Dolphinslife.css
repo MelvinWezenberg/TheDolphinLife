@@ -23,3 +23,24 @@ h1 {
   justify-content: space-around;
   flex-wrap:wrap;
 }
+
+/*palette: http://www.colourlovers.com/palette/475875/Gentle_Waves?widths=0*/
+.color-1{
+  background-color:#D3E2BB;
+}
+
+.color-2{
+  background-color:#C2DCB9;
+}
+
+.color-3{
+background-color:  #A8CBB3;
+}
+
+.color-4{
+  background-color:#83BDB1;
+}
+
+.color-5{
+  background-color: #62B2AF;
+}

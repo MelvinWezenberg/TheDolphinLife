@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Dolphinslife.css">
+
+	<!--Probably Put this in JS as well! -->
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.11&appId=301881120331254';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-sm palette-5 jtMargin">
+		<button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="navbar-nav col-md-12 text-center">
+				<div class="col-md-2 toMiddle">
+					<a id="home" class="nav-item nav-link text-white" href="homepage.html"> Home </a>
+				</div>
+				<div class="col-md-3 toMiddle">
+					<a id="explore" class="nav-item nav-link text-white" href="#"> Explore the Dolphins </a>
+				</div>
+				<div class="col-md-2 d-none d-md-block">
+					<img src="https://phinphanatic.com/wp-content/blogs.dir/62/files/2012/07/tumblr_m2hbjfRfMd1qglqd0o1_500.jpg" alt="logo" width="40" height="40" class="d-inline-block navLogo">
+				</div>
+				<div class="col-md-3 toMiddle">
+					<a id="meet" class="nav-item nav-link text-white" href="#"> Meet a Dolphin </a>
+				</div>
+				<div class="col-md-2 toMiddle">
+					<a id="contact" class="nav-item nav-link text-white" href="#"> Contact Us </a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Jubotron Intro -->
+	<div class="jumbotron jumbotron-fluid palette-4 text-center">
+		<div class="container">
+			<h1 class="display-3 smPadding">Want to know where dolphins are near you?</h1>
+			<p class="lead">Find out below!</p>
+		</div>
+		<form id="DolphinFinder" class="container">
+			<p></p>
+			<div class="form-group">
+				<label for="exampleFormControlSelect1">Where do you live?</label>
+				<select class="form-control" id="tableFor">
+					<option>Europe</option>
+					<option id="NA">North America</option>
+					<option>South America</option>
+					<option>Australia</option>
+					<option>Africa</option>
+					<option>West Asia</option>
+					<option>East Asia</option>
+				</select>
+				<button id="DolphinFinder2" class="btn btn-primary">Confirm</button>
+			</div>
+			<div id="player"></div>
+		</div>
+		<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '3Bk6VPWGi1o',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+    </script>
+		<div id="map"></div>
+		<script>
+				function initMap() {
+
+					var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 3,
+						center: {lat: 41.661420, lng: 6.029392}
+					});
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: 41.661420, lng: 6.091736},
+        {lat: 41.915539, lng: 6.029392},
+        {lat: 40.429867, lng: 13.496724},
+        {lat: 37.183574, lng: 24.276572},
+      ]
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtP4g5YZUY47PRvSWLzoy6zTUNJUaoitc&callback=initMap">
+    </script>
+<!-- Jumbotron species -->
+	<div class="jumbotron jumbotron-fluid palette-3 text-center">
+		<h1 class="display-3 smPadding">Dolphins in Europe</h1>
+		<p class="lead text-center smPadding">Explore all the different species</p>
+		<div class="container">
+		<div class="row lgPadding">
+			<div class="col-sm-4">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="http://www.danapointwhalewatching.com/wp-content/uploads/2013/03/image2.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">The Melphin</h4>
+						<button id="DolphinFinder2" class="btn btn-primary">Go To Dolphin!</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="https://openthewordblog.files.wordpress.com/2016/09/dolphins-rosa-lynn-a-flickr-creativecommons.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">The MarcPhin</h4>
+						<button id="DolphinFinder3" class="btn btn-primary">Go To Dolphin!</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="http://www.oceansecho.co.za/wp-content/uploads/ocean-life.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">The JoeyPhin</h4>
+						<button id="DolphinFinder2" class="btn btn-primary">Go To Dolphin!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>
+		<button type="button" class="btn palette-5 w-50 text-white">Explore</button>
+	</div>
+	<!-- Jumbotron Something -->
+		<div class="jumbotron jumbotron-fluid palette-2 text-center">
+			<h1 class="display-3 smPadding">Something</h1>
+			<p class="lead text-center smPadding">Melvin loves dolphins</p>
+		</div>
+		<!-- Jumbotron Something 2 -->
+			<div class="jumbotron jumbotron-fluid palette-2 text-center">
+				<h1 class="display-3 smPadding">Something else</h1>
+				<p class="lead text-center smPadding">Melvin loves dolphins here as well</p>
+			</div>
+<!-- footer -->
+<footer class="text-white palette-1 text-center">
+	<span><small>Copyright 2017 -  All rights reserved.</small></span>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="DolphinLife.js"></script>
+</html>

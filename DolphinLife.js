@@ -11,8 +11,8 @@ function initMap() {
         });
       }
 // QUIZ
-let slides[$('#q1'),$('#q2'),$('#q3'),$('#q4'),$('#dolphinManiac')]
-let buttons[$('#q1C'),$('#q2C'),$('#q3C'),$('#q4C')];
+let slides=[$('#q1'),$('#q2'),$('#q3'),$('#q4'),$('#dolphinManiac')]
+let buttons=[$('#q1C'),$('#q2C'),$('#q3C'),$('#q4C')];
 let mistakes;
 
   // functions for quiz

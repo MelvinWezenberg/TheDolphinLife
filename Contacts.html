@@ -33,12 +33,45 @@
 
 	<!-- Jubotron Intro -->
 	<div class="jumbotron jumbotron-fluid palette-4 text-center">
-			<h1 class="display-3 smPadding">Contacts Information</h1>
-			<p class="lead">*insert things*</p>
+		<h1 class="display-3 smPadding">Contacts Information</h1>
+		<p class="lead">Telephone: 0049 151 200200726</p>
+		<p class="lead">E-Mail: TalkToTheDolphin@gmail.com</p>
+		<p class="lead">Address:Goudsesingel 188, 3031EJ Rotterdam, Holland</p>
 	</div>
 	<!-- Jumbotron form -->
 	<div class="jumbotron jumbotron-fluid palette-3 text-center">
-			<h1 class="display-3 smPadding">Join our newsletter</h1>
+		<form>
+			<h3 class="display-3 smPadding">Join our newsletter</h3>
+			<label>
+        First Name:<input type="text" name="firstName">
+    	</label>
+    	<label>
+        Last Name:<input type="text" name="lastName">
+    	</label>
+    	<label>
+        Your Email:<input type="text" name="email">
+    	</label>
+    	<p>Gender:</p>
+    	<label>
+        <input type="radio" name="gender" value="male"> Male
+    	</label>
+    	<label>
+        <input type="radio" name="gender" value="female"> Female
+    	</label>
+    	<p>Nationality:</p>
+    	<label>
+        Nationality:<input type="text" name="Nationality">
+    	</label>
+    	<p>Your description:</p>
+    	<textarea name="description"></textarea>
+    	<label>
+        Password: <input type="password" name="password">
+    	</label>
+   		<label>
+        Confirm Password : <input type="password" name="password_confirm">
+   		</label>
+   		<input type="submit" value="Register">
+		</form>
 			<p class="lead">*insert things*</p>
 			<button id="newsletter" type="button" class="btn palette-5 w-50 text-white">I want to join!</button>
 	</div>

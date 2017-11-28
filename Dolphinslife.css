@@ -77,6 +77,10 @@ margin: auto;
 .fillVertical{
   height: 100%;
 }
+/* do not show */
+.hide{
+  display: none;
+}
 
 /*palette: http://www.colourlovers.com/palette/475875/Gentle_Waves?widths=0*/
 .palette-1{

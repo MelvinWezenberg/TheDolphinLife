@@ -13,13 +13,13 @@ function initMap() {
 // QUIZ
 let slides=[$('#q1'),$('#q2'),$('#q3'),$('#q4'),$('#dolphinManiac')]
 let buttons=[$('#q1C'),$('#q2C'),$('#q3C'),$('#q4C')];
-let mistakes;
+let mistakes=0;
 
   // functions for quiz
 function switchSlide(button,oldSlide,newSlide){
   button.on("click",() =>{
-    newSlide.slideToggle();
     oldSlide.hide();
+    newSlide.slideToggle();
   });
 };
 
@@ -31,14 +31,13 @@ function textChange(a,b){
 switchSlide($('#quizStart'),$('#quizPresentation'),$('#q1'));
 
 // for loop to swap questions
-for (let i = 0; i < slides.length; i++){
-switchSlide(buttons[i],slides[i],slides[i++])
+for (let i = 0; i < 4; i++){
+switchSlide(buttons[i],slides[i],slides[i+1])
 };
 
 //count mistakes
-$('button[name=incorrect]').on("click",() =>{
+$('button[name="incorrect"]').on("click",() =>{
     mistakes++
-    errorMessage.slideToggle();
   });
 
 // restart quiz
@@ -49,7 +48,7 @@ $("#restart").on("click",() =>{
 } );
 
 // change message
-textChange ($('#numberMistakes'),"You did"+mistakes+"mistakes")
+textChange ($('#numberMistakes'),"You did "+mistakes+" mistakes")
 
 
 

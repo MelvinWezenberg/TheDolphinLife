@@ -6,6 +6,27 @@ html, body {
   font-family: "Lato", sans-serif;
 }
 
+#landingButton1{
+  position: absolute;
+  top: 50%;
+  right: 60%;
+  height: 60px;
+  width: 150px;
+
+}
+#landingButton2{
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  height: 60px;
+  width: 150px;
+}
+
+.landing{
+  position:relative;
+  display: inline-block;
+}
+
 h1 {
   text-align: center;
   color:white;

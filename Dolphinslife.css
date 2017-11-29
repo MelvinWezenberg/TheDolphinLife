@@ -65,6 +65,9 @@ margin: auto;
 .jtMargin{
   margin-bottom: 32px;
 }
+.btMargin{
+  margin-bottom: 10px;
+}
 .wrapper{
   margin-left: auto;
   margin-top: auto;

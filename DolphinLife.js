@@ -13,13 +13,13 @@ function initMap() {
 // QUIZ
 let slides=[$('#q1'),$('#q2'),$('#q3'),$('#q4'),$('#dolphinManiac')]
 let buttons=[$('#q1C'),$('#q2C'),$('#q3C'),$('#q4C')];
-let mistakes=0;
 
   // functions for quiz
-function switchSlide(button,oldSlide,newSlide){
+function switchSlide(button,oldSlide,newSlide,message){
   button.on("click",() =>{
     oldSlide.hide();
     newSlide.slideToggle();
+    message.hide()
   });
 };
 
@@ -28,29 +28,21 @@ function textChange(a,b){
 }
 
 //start quiz
-switchSlide($('#quizStart'),$('#quizPresentation'),$('#q1'));
+switchSlide($('#quizStart'),$('#quizPresentation'),$('#q1'),$("#error"));
 
 // for loop to swap questions
 for (let i = 0; i < 4; i++){
-switchSlide(buttons[i],slides[i],slides[i+1])
+switchSlide(buttons[i],slides[i],slides[i+1],$("#error"))
 };
 
-//count mistakes
-$('button[name="incorrect"]').on("click",() =>{
-    mistakes++
+//show error
+$("button[name='incorrect']").on("click",() =>{
+    $("#error").show();
   });
 
+
 // restart quiz
-$("#restart").on("click",() =>{
-  q1.slideToggle();
-  dolphinManiac.hide();
-  mistakes=0;
-} );
-
-// change message
-textChange ($('#numberMistakes'),"You did "+mistakes+" mistakes")
-
-
+switchSlide($("#restart"),$("#dolphinManiac"),$("#q1"));
 
 
 

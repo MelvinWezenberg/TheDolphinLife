@@ -123,6 +123,7 @@
 			}
 		}
 	</script>
+	<div id="player"></div>
 	<button type="button" class="btn palette-5 w-50 text-white">I'd love to swim with dolphins!</button>
 </div>
 <!-- Jumbotron Quiz -->
@@ -134,72 +135,42 @@
 </div>
 	<div id="q1" class="hide">
 		<p class="lead text-center smPadding">Question 1</p>
-		<button id="q1C" type="button" class="btn palette-5 w-50 text-white">Correct Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
+		<button id="q1C" type="button" class="btn palette-5 w-50 text-white btMargin">Correct Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
 	</div>
 	<div id="q2" class="hide">
 		<p class="lead text-center smPadding">Question 2</p>
-		<button id="q2C" type="button" class="btn palette-5 w-50 text-white">Correct Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
+		<button id="q2C" type="button" class="btn palette-5 w-50 text-white btMargin">Correct Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
 	</div>
 	<div id="q3" class="hide">
 		<p class="lead text-center smPadding">Question 3</p>
-		<button id="q3C" type="button" class="btn palette-5 w-50 text-white">Correct Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
+		<button id="q3C" type="button" class="btn palette-5 w-50 text-white btMargin">Correct Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
 	</div>
 	<div id="q4" class="hide">
 		<p class="lead text-center smPadding">Question 4</p>
-		<button id="q4C" type="button" class="btn palette-5 w-50 text-white">Correct Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
+		<button id="q4C" type="button" class="btn palette-5 w-50 text-white btMargin">Correct Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
+		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">Wrong Answer</button>
 	</div>
 	<div id="dolphinManiac" class="hide">
-		<p class="lead text-center smPadding">You're a real DOLPHINMANIAC!</p>
+		<h1 class="display-3 text-center smPadding">You're a real DOLPHINMANIAC!</h1>
+		<p></p>
 		<img src="https://memegenerator.net/img/instances/57896225/ur-an-undercover-dolphin-lover.jpg" alt="banner" width="384" height="240">
-		<p id="numberMistakes" class="lead text-center smPadding">*number of mistakes*</p>
+		<p></p>
 		<button id="restart" type="button" class="btn palette-5 w-50 text-white">Restart quiz</button>
 	</div>
-
-
-
-
-<!-- tried with a carousel, did not work -->
-	<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<p class="lead text-center smPadding">Q1</p>
-				<a class="right carousel-control" role="button" href="#carouselExampleControls" data-slide="next"><button type="button" class="btn palette-5 w-50 text-white">Correct Answer</button><a>
-					<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-					<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-					<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-				</div>
-				<div class="carousel-item">
-					<p class="lead text-center smPadding">Q2</p>
-					<a role="button" href="#carouselExampleControls" data-slide="next"><button type="button" class="btn palette-5 w-50 text-white">Correct Answer</button><a>
-						<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-						<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-						<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-				</div>
-				<div class="carousel-item">
-					<p class="lead text-center smPadding">Q3</p>
-					<a role="button" href="#carouselExampleControls" data-slide="next"><button type="button" class="btn palette-5 w-50 text-white">Correct Answer</button><a>
-						<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-						<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-						<button type="button" class="btn palette-5 w-50 text-white">Wrong Answer</button>
-				</div>
-				<div class="carousel-item">
-					<p class="lead text-center smPadding">You're a real Dolphin Master!</p>
-					<a role="button" href="#carouselExampleControls" data-slide="next"><button type="button" class="btn palette-5 w-50 text-white">Retake the quiz</button><a>
-				</div>
-			</div>
-		</div> -->
+	<div id="error" class=hide>
+		<p class="lead text-center smPadding">Human, I am disappointed, your answer was WRONG!</p>
+	</div>
 	</div>
 		<!-- footer -->
 		<footer class="text-black palette-1 text-center">

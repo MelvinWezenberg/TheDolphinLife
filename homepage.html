@@ -44,56 +44,18 @@
 		<h1 class="display-3 smPadding">Each dolphin is unique</h1>
 		<p class="lead text-center smPadding">Did you know that dolphins can live in fresh water as well?</p>
 		<p class="lead text-center smPadding">And that we did experience the estintion of a specie of freshwater dolpin in the last century?</p>
-		<!-- <div class="container">
-		<div class="row lgPadding">
-		<div class="col-sm-4">
-		<div class="card" style="width: 20rem;">
-		<img class="card-img-top" src="http://www.danapointwhalewatching.com/wp-content/uploads/2013/03/image2.jpg" alt="Card image cap">
-		<div class="card-body">
-		<h4 class="card-title">Species #1</h4>
-		<p class="card-text">Cool Thing #1</p>
+		<a href="Explore_the_dolphins.html"><button type="button" class="btn palette-5 w-50 text-white">I want to know more about dolphins!</button></a>
 	</div>
-</div>
-</div>
-<div class="col-sm-4">
-<div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://openthewordblog.files.wordpress.com/2016/09/dolphins-rosa-lynn-a-flickr-creativecommons.jpg" alt="Card image cap">
-<div class="card-body">
-<h4 class="card-title">Species #1</h4>
-<p class="card-text">Cool Thing #2</p>
-</div>
-</div>
-</div>
-<div class="col-sm-4">
-<div class="card" style="width: 20rem;">
-<img class="card-img-top" src="http://www.oceansecho.co.za/wp-content/uploads/ocean-life.jpg" alt="Card image cap">
-<div class="card-body">
-<h4 class="card-title">Species #1</h4>
-<p class="card-text">Cool Thing #3</p>
-</div>
-</div>
-</div>
-</div>
-</div> -->
-<a href="Explore_the_dolphins.html"><button type="button" class="btn palette-5 w-50 text-white">I want to know more about dolphins!</button></a>
-</div>
-<!-- Jumbotron Something -->
-<div class="jumbotron jumbotron-fluid palette-2 text-center">
-	<h1 class="display-3 smPadding">Always dreamed about swimming with dolhins?</h1>
-	<p class="lead text-center smPadding">Now you can!</p>
-
-<!-- YOUTUBE API -->
-
-	<script>
-		// 2. This code loads the IFrame Player API code asynchronously.
+	<!-- Jumbotron Meet a Dolphin -->
+	<div class="jumbotron jumbotron-fluid palette-2 text-center">
+		<h1 class="display-3 smPadding">Always dreamed about swimming with dolhins?</h1>
+		<p class="lead text-center smPadding">Now you can!</p>
+		<!-- YOUTUBE API -->
+		<script>
 		var tag = document.createElement('script');
-
 		tag.src = "https://www.youtube.com/iframe_api";
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-		// 3. This function creates an <iframe> (and YouTube player)
-		//    after the API code downloads.
 		var player;
 		function onYouTubeIframeAPIReady() {
 			player = new YT.Player('player', {
@@ -106,15 +68,9 @@
 				}
 			});
 		}
-
-		// 4. The API will call this function when the video player is ready.
 		function onPlayerReady(event) {
 			event.target.playVideo();
 		}
-
-		// 5. The API calls this function when the player's state changes.
-		//    The function indicates that when playing a video (state=1),
-		//    the player should play for six seconds and then stop.
 		var done = false;
 		function onPlayerStateChange(event) {
 			if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -122,63 +78,65 @@
 				done = true;
 			}
 		}
-	</script>
-	<div id="player"></div>
-	<button type="button" class="btn palette-5 w-50 text-white">I'd love to swim with dolphins!</button>
-</div>
-<!-- Jumbotron Quiz -->
-<div class="jumbotron jumbotron-fluid palette-2 text-center">
-	<div id="quizPresentation">
-	<h1 class="display-3 smPadding">Test your dolphin knowledge!</h1>
-	<p class="lead text-center smPadding">Are you ready to take our test?</p>
-	<button id="quizStart" type="button" class="btn palette-5 w-50 text-white">I ain't no scared, give it to me!</button>
-</div>
-	<div id="q1" class="hide">
-		<p class="lead text-center smPadding">Which dolphin species is close to being the first one completely driven to extinction by humans? </p>
-		<button id="q1C" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Spinner Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Amazon River Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Bottlenose Dolphin</button>
+		</script>
+		<!-- end of youtube api	 -->
+		<div id="player"></div>
+		<button type="button" class="btn palette-5 w-50 text-white">I'd love to swim with dolphins!</button>
 	</div>
-	<div id="q2" class="hide">
-		<p class="lead text-center smPadding">Which Dolphin has a nickname "Panda Dolphin"?</p>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Bottlenose Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji</button>
-		<button id="q2C" type="button" class="btn palette-5 w-50 text-white btMargin">The Commerson's Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Spinner</button>
+	
+	<!-- Jumbotron Quiz -->
+	<div class="jumbotron jumbotron-fluid palette-2 text-center">
+		<div id="quizPresentation">
+			<h1 class="display-3 smPadding">Test your dolphin knowledge!</h1>
+			<p class="lead text-center smPadding">Are you ready to take our test?</p>
+			<button id="quizStart" type="button" class="btn palette-5 w-50 text-white">I ain't no scared, give it to me!</button>
+		</div>
+		<div id="q1" class="hide">
+			<p class="lead text-center smPadding">Which dolphin species is close to being the first one completely driven to extinction by humans? </p>
+			<button id="q1C" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Spinner Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Amazon River Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Bottlenose Dolphin</button>
+		</div>
+		<div id="q2" class="hide">
+			<p class="lead text-center smPadding">Which Dolphin has a nickname "Panda Dolphin"?</p>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Bottlenose Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji</button>
+			<button id="q2C" type="button" class="btn palette-5 w-50 text-white btMargin">The Commerson's Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Spinner</button>
+		</div>
+		<div id="q3" class="hide">
+			<p class="lead text-center smPadding">In Laos, the inhabitants have the belief that humans can reincarnate in...</p>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Amazon River Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Commerson's Dolphin</button>
+			<button id="q3C" type="button" class="btn palette-5 w-50 text-white btMargin">The Irrawaddy Dolphin </button>
+		</div>
+		<div id="q4" class="hide">
+			<p class="lead text-center smPadding">Which dolphin species is famous for being able to do incredible acrobatic trics?</p>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Irrawaddy Dolphin</button>
+			<button id="q4C" type="button" class="btn palette-5 w-50 text-white btMargin">The Spinner Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji Dolphin</button>
+			<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Amazon River Dolphin</button>
+		</div>
+		<div id="dolphinManiac" class="hide">
+			<h1 class="display-3 text-center smPadding">You're a real DOLPHINMANIAC!</h1>
+			<p></p>
+			<img src="https://memegenerator.net/img/instances/57896225/ur-an-undercover-dolphin-lover.jpg" alt="banner" width="384" height="240">
+			<p></p>
+			<button id="restart" type="button" class="btn palette-5 w-50 text-white">Restart quiz</button>
+		</div>
+		<div id="error" class=hide>
+			<p class="lead text-center smPadding">Human, I am disappointed, your answer was WRONG!</p>
+		</div>
 	</div>
-	<div id="q3" class="hide">
-		<p class="lead text-center smPadding">In Laos, the inhabitants have the belief that humans can reincarnate in...</p>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Amazon River Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Commerson's Dolphin</button>
-		<button id="q3C" type="button" class="btn palette-5 w-50 text-white btMargin">The Irrawaddy Dolphin </button>
-	</div>
-	<div id="q4" class="hide">
-		<p class="lead text-center smPadding">Which dolphin species is famous for being able to do incredible acrobatic trics?</p>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Irrawaddy Dolphin</button>
-		<button id="q4C" type="button" class="btn palette-5 w-50 text-white btMargin">The Spinner Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Baiji Dolphin</button>
-		<button name="incorrect" type="button" class="btn palette-5 w-50 text-white btMargin">The Amazon River Dolphin</button>
-	</div>
-	<div id="dolphinManiac" class="hide">
-		<h1 class="display-3 text-center smPadding">You're a real DOLPHINMANIAC!</h1>
-		<p></p>
-		<img src="https://memegenerator.net/img/instances/57896225/ur-an-undercover-dolphin-lover.jpg" alt="banner" width="384" height="240">
-		<p></p>
-		<button id="restart" type="button" class="btn palette-5 w-50 text-white">Restart quiz</button>
-	</div>
-	<div id="error" class=hide>
-		<p class="lead text-center smPadding">Human, I am disappointed, your answer was WRONG!</p>
-	</div>
-	</div>
-		<!-- footer -->
-		<footer class="text-black palette-1 text-center">
-			<span><small>Copyright 2017 -  All rights reserved.</small></span>
-		</footer>
-	</body>
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-	<script src="DolphinLife.js"></script>
-	</html>
+	<!-- footer -->
+	<footer class="text-black palette-1 text-center">
+		<span><small>Copyright 2017 -  All rights reserved.</small></span>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="DolphinLife.js"></script>
+</html>

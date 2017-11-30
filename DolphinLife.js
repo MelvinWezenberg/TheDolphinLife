@@ -1,4 +1,4 @@
-$(()=> {
+$(document).ready(()=> {
 
 //GOOGLE MAPS
   function initMap() {
@@ -46,7 +46,10 @@ $(()=> {
   // restart quiz
   switchSlide($("#restart"),$("#dolphinManiac"),$("#q1"));
 
+// formu
 
-
+$("#newsletter").click(function(){
+  alert("You have successfully signed up for the Newsletter! Thank you for being a Dolphiner :)");
+});
 
 });

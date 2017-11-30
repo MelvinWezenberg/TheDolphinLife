@@ -27,9 +27,7 @@ h1 {
   margin-top: 25px;
 }
 
-#dolphinpic{
-  width:100%;
-}
+#dolphinpic{ width:100; }
 
 #photo-container {
   display: flex;
@@ -42,9 +40,7 @@ h1 {
   margin-bottom: 10px;
 }
 /*Navbar text vertical center alignment*/
-.toMiddle{
-margin: auto;
-}
+.toMiddle{ margin: auto; }
 /*paddings top & bottom*/
 .smPadding{
   padding-bottom: 10px;
@@ -54,28 +50,18 @@ margin: auto;
   padding-bottom: 30px;
   padding-top: 30px;
 }
-.jtMargin{
-  margin-bottom: 32px;
-}
-.btMargin{
-  margin-bottom: 10px;
-}
+.jtMargin{ margin-bottom: 32px; }
+.btMargin{ margin-bottom: 10px; }
 .wrapper{
   margin-left: auto;
   margin-top: auto;
 }
 
 /*item fills the space*/
-.fillHorizontal{
-  width: 100%;
-}
-.fillVertical{
-  height: 100%;
-}
+.fillHorizontal{ width: 100%; }
+.fillVertical{ height: 100%; }
 /* do not show */
-.hide{
-  display: none;
-}
+.hide { display: none; }
 
 /*palette: http://www.colourlovers.com/palette/475875/Gentle_Waves?widths=0*/
 .palette-1{

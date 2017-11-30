@@ -67,16 +67,18 @@ section { padding: 50px 0; }
 .hide { display: none; }
 
 /*palette: http://www.colourlovers.com/palette/475875/Gentle_Waves?widths=0*/
-.palette-1 { background-color:#D3E2BB; }
+.palette-1 { background-color:#D3E2BB !important}
 
-.palette-2 { background-color:#C2DCB9; }
+.palette-2 { background-color:#C2DCB9 !important}
 
-.palette-3 { background-color:  #A8CBB3; }
+.palette-3 { background-color:  #A8CBB3 !important}
 
-.palette-4{ background-color:#83BDB1; }
+.palette-4{ background-color:#83BDB1 !important}
 
-.palette-5 { background-color:#62B2AF}
-.palette-h{ background-color:#FA7105 }
+.palette-5 { background-color:#62B2AF !important}
+
+.palette-h{ background-color:#FA7105 !important}
+
 .seaBG{
   background-image: url("http://images.all-free-download.com/images/graphicthumb/sea_waves_effect_pattern_background_vector_548147.jpg");
 }

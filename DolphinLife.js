@@ -46,7 +46,10 @@ $(document).ready(()=> {
   // restart quiz
   switchSlide($("#restart"),$("#dolphinManiac"),$("#q1"));
 
+// formu
 
-
+$("newsletter").on("click", () =>{
+  alert("Thank you for being a Dolphiner :)")
+})
 
 });

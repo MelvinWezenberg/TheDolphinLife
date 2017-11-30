@@ -5,7 +5,11 @@ html, body {
   background-image: url("http://images.all-free-download.com/images/graphicthumb/sea_waves_effect_pattern_background_vector_548147.jpg");
   font-family: "Lato", sans-serif;
 }
-
+#wrapper {
+  height: 100vh !important;
+  background: url("vevdvf.jpg");
+  background-size: cover;
+}
 #landingButton1{
   position: absolute;
   top: 50%;
@@ -37,6 +41,14 @@ h1 {
   height:150px;
   display: block;
   margin:20px auto;
+}
+
+.btn-margin {
+  margin-top: 25px;
+}
+
+.dolphinpic{
+  width:100%;
 }
 
 #photo-container {

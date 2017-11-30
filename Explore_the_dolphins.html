@@ -80,15 +80,14 @@
 				<div id="player"></div>
 		</div>
 			<script>
-      	// 2. This code loads the IFrame Player API code asynchronously.
+      	//  Youtube API
       	var tag = document.createElement('script');
 
      	 tag.src = "https://www.youtube.com/iframe_api";
      	 var firstScriptTag = document.getElementsByTagName('script')[0];
       	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      	// 3. This function creates an <iframe> (and YouTube player)
-      	//    after the API code downloads.
+      	//  This function creates an <iframe> (and YouTube player)
      	 var player;
      	 function onYouTubeIframeAPIReady() {
         	player = new YT.Player('player', {
@@ -102,14 +101,12 @@
         	});
       	}
 
-      	// 4. The API will call this function when the video player is ready.
+      	//  The API will call this function when the video player is ready.
       	function onPlayerReady(event) {
        	 event.target.playVideo();
       	}
 
-     		// 5. The API calls this function when the player's state changes.
-      	//    The function indicates that when playing a video (state=1),
-      	//    the player should play for six seconds and then stop.
+     		//  The API calls this function when the player's state changes.
       	var done = false;
       	function onPlayerStateChange(event) {
         	if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -131,9 +128,7 @@
         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
         // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
+
         var markers = locations.map(function(location, i) {
           return new google.maps.Marker({
             position: location,
@@ -154,46 +149,104 @@
     	</script>
     	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     	</script>
-    	<script async defer
-    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtP4g5YZUY47PRvSWLzoy6zTUNJUaoitc&callback=initMap">
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtP4g5YZUY47PRvSWLzoy6zTUNJUaoitc&callback=initMap">
     	</script>
 			<!-- Jumbotron species -->
 			<div class="jumbotron jumbotron-fluid palette-3 text-center">
 				<h1 class="display-3 smPadding">Dolphins in Europe</h1>
 				<p class="lead text-center smPadding">Explore all the different species</p>
+				<!-- first line of cards -->
 				<div class="container">
 					<div class="row lgPadding">
 						<div class="col-sm-4">
 							<div class="card" style="width: 20rem;">
-								<img class="card-img-top" src="http://www.danapointwhalewatching.com/wp-content/uploads/2013/03/image2.jpg" alt="Card image cap">
+								<img class="card-img-top" src="http://www.asianews.it/files/img/delfino_rosa" alt="Card image cap">
 								<div class="card-body">
-									<h4 class="card-title">The Melphin</h4>
+									<h4 class="card-title">Amazon River Dolphin</h4>
 									<button id="DolphinFinder2" class="btn palette-5 w-50 text-white"><a herf="The Melphin">Go To Dolphin!</a></button>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="card" style="width: 20rem;">
-								<img class="card-img-top" src="https://openthewordblog.files.wordpress.com/2016/09/dolphins-rosa-lynn-a-flickr-creativecommons.jpg" alt="Card image cap">
+								<img class="card-img-top" src="https://www.zoochat.com/community/media/baiji-lipotes-vexillifer.293868/full?d=1432543759" alt="Card image cap">
 								<div class="card-body">
-									<h4 class="card-title">The MarcPhin</h4>
+									<h4 class="card-title">Baiji Chinese River Dolphin</h4>
 									<button id="DolphinFinder3" class="btn palette-5 w-50 text-white"><a herf="The MarcPhin">Go To Dolphin!</a></button>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="card" style="width: 20rem;">
-								<img class="card-img-top" src="http://www.oceansecho.co.za/wp-content/uploads/ocean-life.jpg" alt="Card image cap">
+								<img class="card-img-top" src="https://www.biolib.cz/IMG/GAL/BIG/174851.jpg" alt="Card image cap">
 								<div class="card-body">
-									<h4 class="card-title">The JoeyPhin</h4>
+									<h4 class="card-title">Commerson's Dolphin</h4>
 									<button id="DolphinFinder2" class="btn palette-5 w-50 text-white"><a herf="The JoeyPhin">Go To Dolphin!</a></button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<button type="button" class="btn palette-5 w-50 text-white">Explore</button>
+				<!-- description 1' row -->
+				<div id="amazon" class=hide>
+					<h1 class="display-3 smPadding">INIA GEOFFRENSIS</h1>
+					<p class="lead text-center smPadding">The Amazon river dolphin is the largest species of river dolphin (also known as the boto, bufeo or pink river dolphin), with adult males reaching 185 kilograms in weight, and 2.5 metres in length. Adults acquire a pink color, more prominent in males, giving it its nickname "pink river dolphin".They have one of the widest ranging diets among toothed whales, and feed on up to 53 different species of fish, such as croakers, catfish, tetras and piranhas. They also consume other animals such as river turtles and freshwater crabs.</p>
+				</div>
+				<div id="baiji" class=hide>
+					<h1 class="display-3 smPadding">LIPOTES VEXILLIFER</h1>
+					<p class="lead text-center smPadding">The dolphin is also called Chinese river dolphin, Yangtze River dolphin, whitefin dolphin and Yangtze dolphin. It was regarded as the goddess of protection by local fishermen and boatmen in China. The baiji population declined drastically in decades as China industrialized and made heavy use of the river for fishing, transportation, and hydroelectricity. It has been credibly claimed, after surveys in the Yangtze River during the 1980s, that baiji could be the first dolphin species in history that humans have driven to extinction.</p>
+				</div>
+				<div id="commer" class=hide>
+					<h1 class="display-3 smPadding">CEPHALORHYNCHUS COMMERSONII</h1>
+					<p class="lead text-center smPadding">The Commerson 's dolphin is also known as the skunk dolphin or panda dolphin. It is one of the four members of the genus Cephalorhynchus, a group of dolphins very attractive because of the coloring patterns of their skin. The dolphin is named for French naturalist Dr Philibert Commerson, who first described them in 1767 after sighting them in the Strait of Magellan.</p>
+				</div>
+				<!-- second row -->
+				<div class="container">
+					<div class="row lgPadding">
+						<div class="col-sm-4">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="https://static-eu-central-1.theguardiansofdemocracy.com/uploads/2017/06/dolphins-1000x600.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Bottlenose Dolphin</h4>
+									<button id="DolphinFinder2" class="btn palette-5 w-50 text-white"><a herf="The Melphin">Go To Dolphin!</a></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="http://assets.worldwildlife.org/photos/6784/images/story_full_width/HI_301421_natureplcom_Roland_Seitre_WWFCanon_mini.jpg?1397660815" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Irrawaddy Dolphin</h4>
+									<button id="DolphinFinder3" class="btn palette-5 w-50 text-white"><a herf="The MarcPhin">Go To Dolphin!</a></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="https://i.pinimg.com/originals/7f/e9/21/7fe9213143754a19173702f5f252b11a.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Spinner Dolphin</h4>
+									<button id="DolphinFinder2" class="btn palette-5 w-50 text-white"><a herf="The JoeyPhin">Go To Dolphin!</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- description 1' row -->
+				<div id="bottlenose" class=hide>
+					<h1 class="display-3 smPadding">TURSIOPS TRUNCATUS</h1>
+					<p class="lead text-center smPadding">No other dolphin species is known, studied and beloved in the world more than the bottlenose dolphin. Charismatic, playful and intelligent are some of the words often associated with this dolphin. And it has been presented in several manifestations of human culture such as films, literature, television, and much more, but not only in modern times, since the age of the Greek civilization, there are records of interaction with this cetacean.Its presence in aquariums and dolphinariums is also very common which makes it the most familiar and recognized species of dolphin.</p>
+				</div>
+				<div id="irrawaddy" class=hide>
+					<h1 class="display-3 smPadding">ORCAELLA BREVIROSTRIS</h1>
+					<p class="lead text-center smPadding">The Irrawaddy river dolphin is a species that belong to the group of oceanic dolphins. Paradoxically, it is not a dolphin exclusively of freshwater. It is closely related to the Orca (Orcinus orca), and it is one of the most threatened extant dolphins. The Irrawaddy dolphin thrives in tropical and subtropical waters of the Indo-Pacific region on and near shallow coastal waters. In Laos, the inhabitants have the belief that humans can reincarnate in these dolphins.</p>
+				</div>
+				<div id="spinner" class=hide>
+					<h1 class="display-3 smPadding">STENELLA LONGIROSTRIS</h1>
+					<p class="lead text-center smPadding">If you have had the opportunity to see a dolphin that performs incredible spins in the air and very energetic jumps in the ocean, perhaps it was a spinner dolphin, because no other species beats them in this area. The spinner dolphin lives in nearly all tropical and subtropical waters between 40∞N and 40∞S. The species primarily inhabits coastal waters, islands, or banks. However, in the eastern tropical Pacific, dolphins live far from shore.</p>
+				</div>
 			</div>
+
 			<!-- Jumbotron Something -->
 			<div class="jumbotron jumbotron-fluid palette-2 text-center">
 				<h1 class="display-3 smPadding">Something</h1>

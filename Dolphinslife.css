@@ -10,26 +10,6 @@ html, body {
   background: url("vevdvf.jpg");
   background-size: cover;
 }
-#landingButton1{
-  position: absolute;
-  top: 50%;
-  right: 60%;
-  height: 60px;
-  width: 150px;
-
-}
-#landingButton2{
-  position: absolute;
-  top: 50%;
-  right: 40%;
-  height: 60px;
-  width: 150px;
-}
-
-.landing{
-  position:relative;
-  display: inline-block;
-}
 
 h1 {
   text-align: center;
@@ -47,7 +27,7 @@ h1 {
   margin-top: 25px;
 }
 
-.dolphinpic{
+#dolphinpic{
   width:100%;
 }
 

@@ -23,11 +23,9 @@ h1 {
   margin:20px auto;
 }
 
-.btn-margin {
-  margin-top: 25px;
-}
+.btn-margin { margin-top: 25px;}
 
-#dolphinpic{ width:100; }
+#dolphinpic{ width:100%; }
 
 #photo-container {
   display: flex;
@@ -52,6 +50,7 @@ h1 {
 }
 .jtMargin{ margin-bottom: 32px; }
 .btMargin{ margin-bottom: 10px; }
+
 .wrapper{
   margin-left: auto;
   margin-top: auto;
@@ -83,18 +82,10 @@ section { padding: 50px 0; }
 .seaBG{
   background-image: url("http://images.all-free-download.com/images/graphicthumb/sea_waves_effect_pattern_background_vector_548147.jpg");
 }
-.lead {
-  font-size: 17px;
-}
-h3 {
-  color: white;
-}
+.lead { font-size: 17px;}
+h3 {color: white;}
 
 /*contact*/
-#newsletter {
-  margin-top: 20px;
-}
+#newsletter {margin-top: 20px;}
 
-.classifications {
-  font-weight: bold;
-}
+.classifications {font-weight: bold;}

@@ -57,7 +57,7 @@
 		</nav>
 
 		<!-- Jubotron Intro -->
-		<div class="jumbotron jumbotron-fluid palette-4 text-center">
+		<div class="jumbotron palette-4 text-center">
 			<div class="container">
 				<h1 class="display-3 smPadding">Want to know where dolphins are near you?</h1>
 				<p class="lead">Find out below!</p>
@@ -75,9 +75,11 @@
 						<option>West Asia</option>
 						<option>East Asia</option>
 					</select>
-					<button id="DolphinFinder2" class="btn palette-5 w-50 text-white">Confirm</button>
+					<button id="DolphinFinder2" class="btn palette-5 w-50 text-white" style=" margin-top: 25px">Confirm</button>
 				</div>
-				<div id="player"></div>
+				<div class="embed-responsive embed-responsive-16by9">
+					<div id="player"></div>
+				</div>
 		</div>
 			<script>
       	//  Youtube API
@@ -152,14 +154,14 @@
     	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtP4g5YZUY47PRvSWLzoy6zTUNJUaoitc&callback=initMap">
     	</script>
 			<!-- Jumbotron species -->
-			<div class="jumbotron jumbotron-fluid palette-3 text-center">
+			<div class="jumbotron palette-3 text-center">
 				<h1 class="display-3 smPadding">Dolphins in Europe</h1>
 				<p class="lead text-center smPadding">Explore all the different species</p>
 				<!-- first line of cards -->
 				<div class="container">
 					<div class="row lgPadding">
 						<div class="col-sm-4">
-							<div class="card" style="width: 20rem;">
+							<div class="card" style="width: 20rem">
 								<img class="card-img-top" src="http://www.asianews.it/files/img/delfino_rosa" alt="Card image cap">
 								<div class="card-body">
 									<h4 class="card-title">Amazon River Dolphin</h4>
@@ -168,7 +170,7 @@
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="card" style="width: 20rem;">
+							<div class="card" style="width: 20rem">
 								<img class="card-img-top" src="https://www.zoochat.com/community/media/baiji-lipotes-vexillifer.293868/full?d=1432543759" alt="Card image cap">
 								<div class="card-body">
 									<h4 class="card-title">Baiji Chinese River Dolphin</h4>
@@ -177,8 +179,8 @@
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="card" style="width: 20rem;">
-								<img class="card-img-top" src="https://www.biolib.cz/IMG/GAL/BIG/174851.jpg" alt="Card image cap">
+							<div class="card" style="width: 20rem">
+							<img class="card-img-top" src="https://www.biolib.cz/IMG/GAL/BIG/174851.jpg" alt="Card image cap">
 								<div class="card-body">
 									<h4 class="card-title">Commerson's Dolphin</h4>
 									<button id="DolphinFinder2" class="btn palette-5 w-50 text-white"><a herf="The JoeyPhin">Go To Dolphin!</a></button>
@@ -248,12 +250,12 @@
 			</div>
 
 			<!-- Jumbotron Something -->
-			<div class="jumbotron jumbotron-fluid palette-2 text-center">
+			<div class="jumbotron palette-2 text-center">
 				<h1 class="display-3 smPadding">Something</h1>
 				<p class="lead text-center smPadding">Melvin loves dolphins</p>
 			</div>
 			<!-- Jumbotron Something 2 -->
-			<div class="jumbotron jumbotron-fluid palette-2 text-center">
+			<div class="jumbotron palette-2 text-center">
 				<h1 class="display-3 smPadding">Something else</h1>
 				<p class="lead text-center smPadding">Melvin loves dolphins here as well</p>
 			</div>

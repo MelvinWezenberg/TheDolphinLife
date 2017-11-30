@@ -48,8 +48,8 @@ $(document).ready(()=> {
 
 // formu
 
-$("newsletter").on("click", () =>{
-  alert("Thank you for being a Dolphiner :)")
-})
+$("#newsletter").click(function(){
+  alert("You have successfully signed up for the Newsletter! Thank you for being a Dolphiner :)");
+});
 
 });

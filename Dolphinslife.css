@@ -88,4 +88,18 @@ h3 {color: white;}
 /*contact*/
 #newsletter {margin-top: 20px;}
 
+<<<<<<< HEAD
+.classifications {
+  font-weight: bold;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+=======
 .classifications {font-weight: bold;}
+>>>>>>> dfa51b415bde3b5e1b94007c3262bfb27cd2ea08

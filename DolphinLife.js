@@ -97,17 +97,18 @@ $(document).ready(()=> {
    button.on("click",() =>{
      a.slideToggle();
      b.hide();
-     c.hide()
-     d.hide()
-     e.hide()
-     f.hide()
+     c.hide();
+     d.hide();
+     e.hide();
+     f.hide();
    });
-   showInfo($('#bAmazon'),$('#amazon'), $('#caiji'), $('#commerson'), $('#bottlenose'), $('#irrawaddy'), $('#spinner'))
-   showInfo($('#bCaiji'), $('#caiji'),$('#amazon'), $('#commerson'), $('#bottlenose'), $('#irrawaddy'), $('#spinner'))
-   showInfo($('#bCommerson'), $('#commerson'), $('#caiji'),$('#amazon'), $('#bottlenose'), $('#irrawaddy'), $('#spinner'))
-   showInfo($('#bBottlenose'), $('#bottlenose'), $('#caiji'),$('#amazon'), $('#commerson'),  $('#irrawaddy'), $('#spinner'))
-   showInfo($('#bIrrawaddy'), $('#irrawaddy'), $('#caiji'),$('#amazon'), $('#commerson'), $('#bottlenose'),  $('#spinner'))
-   showInfo($('#bSpinner'), $('#spinner'), $('#caiji'),$('#amazon'), $('#commerson'), $('#bottlenose'), $('#irrawaddy'))
+ };
+ showInfo($('#bAmazon'),$('#amazon'), $('#baiji'), $('#commerson'), $('#bottlenose'), $('#irrawaddy'), $('#spinner'));
+ showInfo($('#bBaiji'), $('#baiji'),$('#amazon'), $('#commerson'), $('#bottlenose'), $('#irrawaddy'), $('#spinner'));
+ showInfo($('#bCommerson'), $('#commerson'), $('#baiji'),$('#amazon'), $('#bottlenose'), $('#irrawaddy'), $('#spinner'));
+ showInfo($('#bBottlenose'), $('#bottlenose'), $('#baiji'),$('#amazon'), $('#commerson'),  $('#irrawaddy'), $('#spinner'));
+ showInfo($('#bIrrawaddy'), $('#irrawaddy'), $('#baiji'),$('#amazon'), $('#commerson'), $('#bottlenose'),  $('#spinner'));
+ showInfo($('#bSpinner'), $('#spinner'), $('#baiji'),$('#amazon'), $('#commerson'), $('#bottlenose'), $('#irrawaddy'));
 
 
 // FORM
@@ -120,4 +121,5 @@ $(document).ready(()=> {
            document.First Name.focus() ;
            return false;
         };
+});
 });

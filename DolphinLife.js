@@ -112,14 +112,13 @@ $(document).ready(()=> {
 
 
 // FORM
-  function validate()
-     {
-
-        if( document.First Name.value == "" )
-        {
-           alert( "Please provide your First Name!" );
-           document.First Name.focus() ;
-           return false;
-        };
-});
+  // function validate()
+  //    {
+  //
+  //       if( document.First Name.value == "" )
+  //       {
+  //          alert( "Please provide your First Name!" );
+  //          document.First Name.focus() ;
+  //          return false;
+  //       };
 });

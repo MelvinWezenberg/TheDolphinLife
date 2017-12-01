@@ -112,13 +112,10 @@ $(document).ready(()=> {
 
 
 // FORM
-  // function validate()
-  //    {
-  //
-  //       if( document.First Name.value == "" )
-  //       {
-  //          alert( "Please provide your First Name!" );
-  //          document.First Name.focus() ;
-  //          return false;
-  //       };
+
+$("#newsletter").click(function(){
+  alert("You have successfully signed up for the Newsletter! Thank you for being a Dolphiner :)");
+});
+
+
 });

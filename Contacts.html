@@ -53,40 +53,40 @@
 					<div class="col-md-2"></div>
 			    <div class="form-group col-md-4">
 			      <label for="inputEmail4">Email</label>
-			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required pattern="[A-Za-z@.]+">
 					</div>
 					<div class="col-md-1"></div>
 			    <div class="form-group col-md-3">
 			      <label for="inputPassword4">Password</label>
-			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required pattern="[A-Za-z !0-9]+">
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="col-md-2"></div>
 			  	<div class="form-group col-md-6">
 			    	<label for="inputFirstName">First Name</label>
-			    	<input type="text" class="form-control" id="First Name" placeholder="First Name">
+			    	<input type="text" class="form-control" id="First Name" placeholder="First Name" required pattern="[A-Za-z]+">
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="col-md-2"></div>
 			  	<div class="form-group col-md-6">
-			    	<label for="inputAddress2">Last Name</label>
-			    	<input type="text" class="form-control" id="Last Name" placeholder="Last Name">
+			    	<label for="Last Name">Last Name</label>
+			    	<input type="text" class="form-control" id="Last Name" placeholder="Last Name" required pattern="[A-Za-z]+">
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="col-md-2"></div>
 					<div class="form-group col-md-6">
 						<label for="inputAddress">Address</label>
-						<input type="text" class="form-control" id="Address" placeholder="Address">
+						<input type="text" class="form-control" id="Address" placeholder="Address" required pattern="[A-Za-z]+[ -][0-9]+">
 					</div>
 				</div>
 			  <div class="form-row">
 					<div class="col-md-2"></div>
 			    <div class="form-group col-md-3">
 			      <label for="inputCity">City</label>
-			      <input type="text" class="form-control" id="inputCity">
+			      <input type="text" class="form-control" id="inputCity" required pattern="[A-Za-z]+">
 			    </div>
 			    <div class="form-group col-md-3">
 			      <label for="inputState">State</label>
@@ -100,18 +100,34 @@
 			    </div>
 			    <div class="form-group col-md-2">
 			      <label for="inputZip">Zip</label>
-			      <input type="text" class="form-control" id="inputZip" pattern="">
+			      <input type="text" class="form-control" id="inputZip" required pattern="[0-9]+">
 					</div>
 			  </div>
 			  <div class="form-group">
 			    <div class="form-check">
 			      <label class="form-check-label">
-			        <input class="form-check-input" type="checkbox" > I love Dolphins
+			        <input class="form-check-input" type="checkbox" required> I love Dolphins
 			      </label>
 			    </div>
 			  </div>
 			  <button id="newsletter" type="button" class="btn palette-5 w-50 text-white">I want to join!</button>
 			</form>
+		</div>
+<!-- Jubotron Social Media -->
+		<div class="jumbotron  palette-4 text-center">
+				<h6 id="SocialMedia">Share your love for Dolphins here!</h6>
+				<div class="rowsuggestion-cards">
+					<div class=col-2>
+						<a href="https://www.twitter.com"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/0f/e2/5b/0fe25b7f-4e48-fa75-4f18-9ae14ec8e205/source/1200x630bb.jpg" width="30" height="30" class="d-inline-block align-top" alt="Twitter"></a>
+					</div>
+					<div class=col-2>
+						<a href="https://www.facebook.com"><img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" width="30" height="30" class="d-inline-block align-top" alt="Facebook"></a>
+					</div>
+					<div class=col-2>
+						<a href="https://www.instagram.com"><img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" width="30" height="30" class="d-inline-block align-top" alt="Instagram"></a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- footer -->
 		<footer class="text-black palette-1 text-center">

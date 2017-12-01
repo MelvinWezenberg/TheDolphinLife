@@ -5,10 +5,26 @@ html, body {
   background-image: url("http://images.all-free-download.com/images/graphicthumb/sea_waves_effect_pattern_background_vector_548147.jpg");
   font-family: "Lato", sans-serif;
 }
-#wrapper {
-  height: 100vh !important;
-  background: url("vevdvf.jpg");
-  background-size: cover;
+
+#landingButton1{
+  position: absolute;
+  top: 50%;
+  right: 60%;
+  height: 60px;
+  width: 150px;
+
+}
+#landingButton2{
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  height: 60px;
+  width: 150px;
+}
+
+.landing{
+  position:relative;
+  display: inline-block;
 }
 
 h1 {
@@ -23,10 +39,6 @@ h1 {
   margin:20px auto;
 }
 
-.btn-margin { margin-top: 25px;}
-
-#dolphinpic{ width:100%; }
-
 #photo-container {
   display: flex;
   justify-content: space-around;
@@ -38,7 +50,9 @@ h1 {
   margin-bottom: 10px;
 }
 /*Navbar text vertical center alignment*/
-.toMiddle{ margin: auto; }
+.toMiddle{
+margin: auto;
+}
 /*paddings top & bottom*/
 .smPadding{
   padding-bottom: 10px;
@@ -48,67 +62,67 @@ h1 {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-.jtMargin{ margin-bottom: 32px; }
-.btMargin{ margin-bottom: 10px; }
-
+.jtMargin{
+  margin-bottom: 32px;
+}
+.btMargin{
+  margin-bottom: 10px;
+}
 .wrapper{
   margin-left: auto;
   margin-top: auto;
 }
 
-.card { margin-bottom: 25px !important; }
-
-section { padding: 50px 0; }
-
 /*item fills the space*/
-.fillHorizontal{ width: 100%; }
-.fillVertical{ height: 100%; }
+.fillHorizontal{
+  width: 100%;
+}
+.fillVertical{
+  height: 100%;
+}
 /* do not show */
-.hide { display: none; }
+.hide{
+  display: none;
+}
 
 /*palette: http://www.colourlovers.com/palette/475875/Gentle_Waves?widths=0*/
-.palette-1 { background-color:#D3E2BB !important}
+.palette-1{
+  background-color:#D3E2BB;
+}
 
-.palette-2 { background-color:#C2DCB9 !important}
+.palette-2{
+  background-color:#C2DCB9;
+}
 
-.palette-3 { background-color:  #A8CBB3 !important}
+.palette-3{
+background-color:  #A8CBB3;
+}
 
-.palette-4{ background-color:#83BDB1 !important}
+.palette-4{
+  background-color:#83BDB1;
+}
 
-.palette-5 { background-color:#62B2AF !important}
-
-.palette-h{ background-color:#FA7105 !important}
-
-
-.display-3n {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
+.palette-5{
+  background-color:#62B2AF
+}
+.palette-h{
+  background-color:#FA7105
 }
 .seaBG{
   background-image: url("http://images.all-free-download.com/images/graphicthumb/sea_waves_effect_pattern_background_vector_548147.jpg");
 }
-.lead { font-size: 17px;}
-h3 {color: white;}
+.lead {
+  font-size: 17px;
+}
+h3 {
+  color: white;
+}
 
 /*contact*/
-#newsletter {margin-top: 20px;}
+#newsletter {
+  margin-top: 20px;
+}
 
 .classifications {
-  font-weight: bold;
-}
-input:invalid {
-  border: 2px solid black;
-}
-input:valid {
-  border: 2px solid green;
-}
-.rowsuggestion-cards,.col-2{
-  text-align: center;
-  float: left;
-  margin: 0 20px 0 20px;
-}
-#SocialMedia{
-  font-size: 30px;
   font-weight: bold;
 }

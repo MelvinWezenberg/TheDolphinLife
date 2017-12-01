@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -26,10 +26,10 @@
 						<a id="explore" class="nav-item nav-link text-white" href="Explore_the_dolphins.html"> Explore the Dolphins </a>
 					</div>
 					<div class="col-md-2 d-none d-md-block">
-						<a href="index.html"><img src="https://phinphanatic.com/wp-content/blogs.dir/62/files/2012/07/tumblr_m2hbjfRfMd1qglqd0o1_500.jpg" alt="logo" width="40" height="40" class="d-inline-block navLogo"></a>
+						<a href="LandingPage.html"><img src="https://phinphanatic.com/wp-content/blogs.dir/62/files/2012/07/tumblr_m2hbjfRfMd1qglqd0o1_500.jpg" alt="logo" width="40" height="40" class="d-inline-block navLogo"></a>
 					</div>
 					<div class="col-md-3 toMiddle">
-						<a id="meet" class="nav-item nav-link text-white" href="MeetADolphin.html"> Meet a Dolphin </a>
+						<a id="meet" class="nav-item nav-link text-white" href="#"> Meet a Dolphin </a>
 					</div>
 					<div class="col-md-2 toMiddle">
 						<a id="contact" class="nav-item nav-link text-white" href="Contacts.html"> Contact Us </a>
@@ -39,56 +39,40 @@
 		</nav>
 
 		<!-- Jubotron Intro -->
-		<div class="jumbotron  palette-4 text-center">
-			<h1 class="display-3n smPadding">Contacts Information</h1>
+		<div class="jumbotron jumbotron-fluid palette-4 text-center">
+			<h1 class="display-3 smPadding">Contacts Information</h1>
 			<p class="lead">Telephone: 0049 151 200200726</p>
 			<p class="lead">E-Mail: TalkToTheDolphin@gmail.com</p>
 			<p class="lead">Address:Goudsesingel 188, 3031EJ Rotterdam, Holland</p>
 		</div>
 		<!-- Jumbotron form -->
-		<div class="jumbotron palette-3 text-center">
-			<h3 class="display-3n smPadding">Join our newsletter</h3>
+		<div class="jumbotron jumbotron-fluid palette-3 text-center">
+			<h3 class="display-3 smPadding">Join our newsletter</h3>
 			<form>
 			  <div class="form-row">
-					<div class="col-md-2"></div>
-			    <div class="form-group col-md-4">
+			    <div class="form-group col-md-6">
 			      <label for="inputEmail4">Email</label>
-			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required pattern="[A-Za-z@.]+">
-					</div>
-					<div class="col-md-1"></div>
-			    <div class="form-group col-md-3">
-			      <label for="inputPassword4">Password</label>
-			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required pattern="[A-Za-z !0-9]+">
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-2"></div>
-			  	<div class="form-group col-md-6">
-			    	<label for="inputFirstName">First Name</label>
-			    	<input type="text" class="form-control" id="First Name" placeholder="First Name" required pattern="[A-Za-z]+">
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-2"></div>
-			  	<div class="form-group col-md-6">
-			    	<label for="Last Name">Last Name</label>
-			    	<input type="text" class="form-control" id="Last Name" placeholder="Last Name" required pattern="[A-Za-z]+">
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-2"></div>
-					<div class="form-group col-md-6">
-						<label for="inputAddress">Address</label>
-						<input type="text" class="form-control" id="Address" placeholder="Address" required pattern="[A-Za-z]+[ -][0-9]+">
-					</div>
-				</div>
-			  <div class="form-row">
-					<div class="col-md-2"></div>
-			    <div class="form-group col-md-3">
-			      <label for="inputCity">City</label>
-			      <input type="text" class="form-control" id="inputCity" required pattern="[A-Za-z]+">
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
 			    </div>
-			    <div class="form-group col-md-3">
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Password</label>
+			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Address</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress2">Address 2</label>
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputCity">City</label>
+			      <input type="text" class="form-control" id="inputCity">
+			    </div>
+			    <div class="form-group col-md-4">
 			      <label for="inputState">State</label>
 			      <select id="inputState" class="form-control">
 			        <option selected>Choose</option>
@@ -100,34 +84,18 @@
 			    </div>
 			    <div class="form-group col-md-2">
 			      <label for="inputZip">Zip</label>
-			      <input type="text" class="form-control" id="inputZip" required pattern="[0-9]+">
-					</div>
+			      <input type="text" class="form-control" id="inputZip">
+			    </div>
 			  </div>
 			  <div class="form-group">
 			    <div class="form-check">
 			      <label class="form-check-label">
-			        <input class="form-check-input" type="checkbox" required> I love Dolphins
+			        <input class="form-check-input" type="checkbox"> I love Dolphins
 			      </label>
 			    </div>
 			  </div>
 			  <button id="newsletter" type="button" class="btn palette-5 w-50 text-white">I want to join!</button>
 			</form>
-		</div>
-<!-- Jubotron Social Media -->
-		<div class="jumbotron  palette-4 text-center">
-				<h6 id="SocialMedia">Share your love for Dolphins here!</h6>
-				<div class="rowsuggestion-cards">
-					<div class=col-2>
-						<a href="https://www.twitter.com"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/0f/e2/5b/0fe25b7f-4e48-fa75-4f18-9ae14ec8e205/source/1200x630bb.jpg" width="30" height="30" class="d-inline-block align-top" alt="Twitter"></a>
-					</div>
-					<div class=col-2>
-						<a href="https://www.facebook.com"><img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" width="30" height="30" class="d-inline-block align-top" alt="Facebook"></a>
-					</div>
-					<div class=col-2>
-						<a href="https://www.instagram.com"><img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" width="30" height="30" class="d-inline-block align-top" alt="Instagram"></a>
-					</div>
-				</div>
-			</div>
 		</div>
 		<!-- footer -->
 		<footer class="text-black palette-1 text-center">

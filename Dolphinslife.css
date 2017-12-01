@@ -103,12 +103,17 @@ input:invalid {
 input:valid {
   border: 2px solid green;
 }
-.rowsuggestion-cards,.col-2{
-  text-align: center;
+.rowsuggestion-cards {
+    text-align: center;
+    position: abselute;
+}
+
+.col-2{
   float: left;
   margin: 0 20px 0 20px;
 }
 #SocialMedia{
+  margin-top: -30px;
   font-size: 30px;
   font-weight: bold;
 }

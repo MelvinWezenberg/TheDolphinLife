@@ -79,6 +79,12 @@ section { padding: 50px 0; }
 
 .palette-h{ background-color:#FA7105 !important}
 
+
+.display-3n {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
 .seaBG{
   background-image: url("http://images.all-free-download.com/images/graphicthumb/sea_waves_effect_pattern_background_vector_548147.jpg");
 }
@@ -88,7 +94,6 @@ h3 {color: white;}
 /*contact*/
 #newsletter {margin-top: 20px;}
 
-<<<<<<< HEAD
 .classifications {
   font-weight: bold;
 }
@@ -100,6 +105,4 @@ input:invalid {
 input:valid {
   border: 2px solid green;
 }
-=======
 .classifications {font-weight: bold;}
->>>>>>> dfa51b415bde3b5e1b94007c3262bfb27cd2ea08
